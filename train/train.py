@@ -90,4 +90,7 @@ for epoch in range(epochs):
             running_loss = 0
             model.train()
 
+device = torch.device("cpu")
+model.to(device)
+
 torch.save(model, 'classifier.pth')

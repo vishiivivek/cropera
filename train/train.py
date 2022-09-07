@@ -93,4 +93,4 @@ for epoch in range(epochs):
 device = torch.device("cpu")
 model.to(device)
 
-torch.save(model, 'classifier.pth')
+torch.save(model, 'app/classifier.pth')
